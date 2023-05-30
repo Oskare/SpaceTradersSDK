@@ -36,7 +36,7 @@ Console.WriteLine($"Agent: {agent.Symbol}, Credits: {agent.Credits}, HQ: {agent.
 
 Console.WriteLine();
 Console.WriteLine("These are your ships:");
-foreach (var ship in new FleetApi(config).GetMyShips().Data)
+foreach (Ship ship in new FleetApi(config).GetMyShips().Data)
 {
     Console.Write($"  Ship: ");
     Console.Write($"{ship.Symbol}");
